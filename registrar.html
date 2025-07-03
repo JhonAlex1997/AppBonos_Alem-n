@@ -59,13 +59,13 @@
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label">Monto de venta</label>
-                  <input type="number" id="precioVenta" class="form-control" />
+                  <input type="number" id="precioVenta" class="form-control" placeholder="Ingrese el monto de venta" title="Monto de venta" />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label"
                     >¿Desea incluir cuota inicial?</label
                   >
-                  <select id="usaCuotaInicial" class="form-select">
+                  <select id="usaCuotaInicial" class="form-select" title="¿Desea incluir cuota inicial?">
                     <option value="no">No</option>
                     <option value="si">Sí</option>
                   </select>
@@ -78,6 +78,8 @@
                     class="form-control"
                     step="0.01"
                     disabled
+                    placeholder="Ingrese el porcentaje de cuota inicial"
+                    title="Porcentaje de cuota inicial"
                   />
                 </div>
                 <div class="col-md-6">
@@ -88,6 +90,9 @@
                     class="form-control"
                     step="0.01"
                     required
+                    placeholder="Ingrese la tasa efectiva anual"
+                    title="Tasa Efectiva Anual"
+                  />
                   />
                 </div>
                 <div class="col-md-6">
@@ -100,6 +105,8 @@
                     class="form-control"
                     step="1"
                     required
+                    placeholder="Ingrese la frecuencia de pago"
+                    title="Frecuencia de Pago (veces/año)"
                   />
                 </div>
                 <div class="col-md-6">
@@ -110,11 +117,13 @@
                     class="form-control"
                     step="1"
                     required
+                    placeholder="Ingrese el plazo total en años"
+                    title="Plazo Total (Años)"
                   />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label">Tipo de Gracia</label>
-                  <select id="tipoGracia" class="form-select">
+                  <select id="tipoGracia" class="form-select" title="Tipo de Gracia">
                     <option value="ninguna">Ninguna</option>
                     <option value="total">Total (solo intereses)</option>
                     <option value="parcial">
