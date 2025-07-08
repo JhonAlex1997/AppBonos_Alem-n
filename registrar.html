@@ -59,7 +59,7 @@
             <form id="bondForm">
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label class="form-label">Moneda</label>
+                  <label for="moneda" class="form-label">Moneda</label>
                   <select id="moneda" class="form-select">
                     <option value="PEN">Soles</option>
                     <option value="USD">Dólares</option>
@@ -69,7 +69,7 @@
 
                 <div class="col-md-6">
                   <label class="form-label">Tipo de tasa</label>
-                  <select id="tipoTasa" class="form-select">
+                  <select id="tipoTasa" class="form-select" title="Tipo de tasa">
                     <option value="efectiva">Efectiva</option>
                     <option value="nominal">Nominal</option>
                   </select>
@@ -77,7 +77,7 @@
 
                 <div class="col-md-6">
                   <label class="form-label">Capitalización (si es nominal)</label>
-                  <select id="capitalizacion" class="form-select" disabled>
+                  <select id="capitalizacion" class="form-select" disabled title="Capitalización (si es nominal)">
                     <option value="360">Diaria (360)</option>
                     <option value="24">Quincenal</option>
                     <option value="12">Mensual</option>
@@ -91,7 +91,7 @@
 
                 <div class="col-md-6">
                   <label class="form-label">Tipo de año</label>
-                  <select id="tipoAnio" class="form-select">
+                  <select id="tipoAnio" class="form-select" title="Tipo de año">
                     <option value="360">360 días</option>
                     <option value="365">365 días</option>
                   </select>
@@ -99,21 +99,21 @@
 
                 <div class="col-md-6">
                   <label class="form-label">Tasa Anual (%)</label>
-                  <input type="number" id="tasaAnual" class="form-control" step="0.01" required />
+                  <input type="number" id="tasaAnual" class="form-control" step="0.01" required placeholder="Ingrese la tasa anual (%)" title="Tasa Anual (%)" />
                 </div>
 
                 <div class="col-md-6">
                   <label class="form-label">Frecuencia de Pago (veces/año)</label>
-                  <input type="number" id="frecuencia" class="form-control" step="1" required />
+                  <input type="number" id="frecuencia" class="form-control" step="1" required placeholder="Ingrese la frecuencia de pago" title="Frecuencia de Pago (veces por año)" />
                 </div>
 
                 <div class="col-md-6">
                   <label class="form-label">Plazo Total (Años)</label>
-                  <input type="number" id="plazo" class="form-control" step="1" required />
+                  <input type="number" id="plazo" class="form-control" step="1" required placeholder="Ingrese el plazo total en años" title="Plazo Total (Años)" />
                 </div>
 
                 <div class="col-md-6">
-                  <label class="form-label">¿Desea incluir cuota inicial?</label>
+                  <label for="usaCuotaInicial" class="form-label">¿Desea incluir cuota inicial?</label>
                   <select id="usaCuotaInicial" class="form-select">
                     <option value="no">No</option>
                     <option value="si">Sí</option>
@@ -122,17 +122,17 @@
 
                 <div class="col-md-6">
                   <label class="form-label">% Cuota Inicial (ej. 20)</label>
-                  <input type="number" id="porcentajeInicial" class="form-control" step="0.01" disabled />
+                  <input type="number" id="porcentajeInicial" class="form-control" step="0.01" disabled placeholder="Ingrese el porcentaje de cuota inicial" title="Porcentaje de cuota inicial" />
                 </div>
 
                 <div class="col-md-6">
                   <label class="form-label">Monto de venta</label>
-                  <input type="number" id="precioVenta" class="form-control" />
+                  <input type="number" id="precioVenta" class="form-control" placeholder="Ingrese el monto de venta" title="Monto de venta" />
                 </div>
 
                 <div class="col-md-6">
                   <label class="form-label">Tipo de Gracia</label>
-                  <select id="tipoGracia" class="form-select">
+                  <select id="tipoGracia" class="form-select" title="Tipo de Gracia">
                     <option value="ninguna">Ninguna</option>
                     <option value="total">Total (solo intereses)</option>
                     <option value="parcial">Parcial (intereses + % amortización)</option>
